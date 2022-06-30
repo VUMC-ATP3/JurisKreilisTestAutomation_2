@@ -12,7 +12,7 @@ public class FirstSeleniumTest {
         this.chromeParluks = new ChromeDriver();//atvert parlukprogrammu
         this.chromeParluks.navigate().to("https://www.lu.lv/");
         this.chromeParluks.manage().window().maximize();
-        String expectedTitle = "Latvijas Universitāte123";
+        String expectedTitle = "Latvijas Universitāte";
         String actualTitle = chromeParluks.getTitle();
         Assert.assertEquals(actualTitle,expectedTitle);
     }
