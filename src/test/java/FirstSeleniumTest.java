@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 public class FirstSeleniumTest {
     WebDriver chromeParluks;
 
+    public final String expectedText = "Sauce Labs Backpack";
+
     @Test
     public void testPageTitle(){
         this.chromeParluks = new ChromeDriver();//atvert parlukprogrammu
@@ -20,6 +22,18 @@ public class FirstSeleniumTest {
     @AfterMethod
     public void closeBrowser(){
         chromeParluks.quit();
+    }
+
+    @Test
+    public void tess12312323(){
+        Assert.assertEquals("actuul text",expectedText);
+        Assert.assertEquals("actuul text",expectedText);
+    }
+
+
+    @Test
+    public void tess123123(){
+        Assert.assertEquals("actuul text",expectedText);
     }
 
 }
